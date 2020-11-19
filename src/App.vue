@@ -1,28 +1,29 @@
 <template>
   <div id="app">
     <h1 class="is-size-4 title"> Магазин e-commerce</h1>
-<!--    <HelloWorld msg="Welcome to Your Vue.js App"/>-->
+    <div class="columns is-multiline cards_wrapper">
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+    </div>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue';
+import Card from './components/Card.vue';
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
+    Card,
   },
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.cards_wrapper{
+  margin: 1em 6em;
 }
 </style>
