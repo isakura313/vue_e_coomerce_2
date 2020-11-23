@@ -1,8 +1,11 @@
 <template>
   <div class="column is-one-quarter">
     <div class="card">
+      <button class="button" v-if="canBuy">Товар закончился</button>
       <img v-bind:src="image" class="card__img">
+      <p>{{rating}}/5</p>
       <h3 class="card__title"> {{ title }}</h3>
+      //TODO доделать форматирование файла
       <p class="card__price">{{ price }}</p>
       <button class="button is-danger is-pulled-right">Заказать</button>
     </div>
@@ -12,13 +15,19 @@
 <script>
 export default {
   name: 'Card.vue',
-  data() {
-    return {
-      image: 'https://cdn1.ozone.ru/s3/multimedia-t/wc1200/6014496977.jpg',
-      title: 'Заголовок товара',
-      price: 1000,
-      discount: false,
-    };
+  props: {
+    image: String,
+    rating: Number,
+    title: String,
+    discount: Boolean,
+    price: Number,
+    new_price: Number,
+    available: Number,
+  },
+  computed: {
+    canBuy() {
+      return this.available === 0;
+    },
   },
 };
 </script>

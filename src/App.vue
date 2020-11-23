@@ -2,28 +2,40 @@
   <div id="app">
     <h1 class="is-size-4 title"> Магазин e-commerce</h1>
     <div class="columns is-multiline cards_wrapper">
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
+      <Card
+      v-for="book in books"
+      v-bind:key="book.id"
+      v-bind:image="book.image"
+      v-bind:rating="book.rating"
+      v-bind:title="book.title"
+      v-bind:discount="book.discount"
+      v-bind:price="book.price"
+      v-bind:new_price="book.new_price"
+      v-bind:available="book.available"
+      />
     </div>
   </div>
 </template>
 
 <script>
 import Card from './components/Card.vue';
+import data from '../public/json/full.json';
 
 export default {
   name: 'App',
   components: {
     Card,
   },
+  data() {
+    return {
+      books: data.books,
+    };
+  },
 };
 </script>
 
 <style scoped>
-.cards_wrapper{
+.cards_wrapper {
   margin: 1em 6em;
 }
 </style>

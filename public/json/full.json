@@ -1,0 +1,127 @@
+{
+  "video": [
+    {
+      "id": 205213585,
+      "title": "Видеокарта Palit RTX 3070 GAMINGPRO",
+      "description": "Видеокарта Palit PCI-E 4.0 PA-RTX3070 GAMINGPRO 8G NV RTX3070 8192Mb 256 GDDR6 1500/14000/HDMIx1/DPx",
+      "price": 59250,
+      "new_price": 59250,
+      "image": "https://cdn1.ozone.ru/s3/multimedia-y/wc1200/6028177630.jpg",
+      "available": 20,
+      "rating": 5,
+      "discount": false
+    },
+    {
+      "id": 205213586,
+      "title": "Видеокарта Gigabyte RTX 3070 GAMING OC (GV-N3070GAMING OC-8GD)",
+      "description": "Видеокарта Gigabyte PCI-E 4.0 GV-N3070GAMING OC-8GD NV RTX3070 8192Mb 256 GDDR6 1815/14000/HDMIx2/DP",
+      "price": 58035,
+      "new_price": 54299,
+      "image": "https://cdn1.ozone.ru/s3/multimedia-m/wc1200/6028177618.jpg",
+      "available": 20,
+      "rating": 5,
+      "discount": true
+    },
+    {
+      "id": 200750095,
+      "title": "Видеокарта nVidia GeForce GTX1660 Super Palit GamingPro OC PCI-E 6144Mb (NE6166SS18J9-1160A)",
+      "description": "",
+      "price": "",
+      "new_price": "",
+      "image": "https://cdn1.ozone.ru/s3/multimedia-o/wc1200/6025178460.jpg",
+      "available": 0,
+      "rating": 5,
+      "discount": false
+    },
+    {
+      "id": 177012662,
+      "title": "Видеокарта MSI Radeon RX 5500 XT MECH OC 8GB",
+      "description": "Radeon RX 5500 XT на основе архитектуры Radeon RDNA обеспечивает исключительную производительность и высокую точность изображения в играх.",
+      "price": 18468,
+      "new_price": 14600,
+      "image": "https://cdn1.ozone.ru/s3/multimedia-j/wc1200/6008404039.jpg",
+      "available": 40,
+      "rating": 5,
+      "discount": true
+    },
+    {
+      "id": 196109079,
+      "title": "Видеокарта AFOX GeForce GTX 1050 Ti 4096Mb V3 (AF1050TI-4096D5H2-V3)",
+      "description": "коробка, инструкция, диск ПО, видеокарта",
+      "price": 10799,
+      "new_price": 9999,
+      "image": "https://cdn1.ozone.ru/s3/multimedia-f/wc1200/6029800527.jpg",
+      "available": 5,
+      "rating": 4,
+      "discount": true
+    }
+  ],
+  "books": [
+    {
+      "id": 146804262,
+      "title": "Не такая, как все | Леви Марк",
+      "description": "На Пятой авеню в Нью-Йорке стоит небольшое здание, ничем не отличающееся от других",
+      "price": 317,
+      "new_price": 289,
+      "image": "https://cdn1.ozone.ru/s3/multimedia-4/wc1200/6008736520.jpg",
+      "available": 10,
+      "rating": 4.7,
+      "discount": true
+    },
+    {
+      "id": 141011657,
+      "title": "Дом на краю ночи | Бэннер Кэтрин",
+      "description": "Начало ХХ века. Остров Кастелламаре затерялся в Средиземном море, это забытый богом уголок, где так легко найти прибежище от волнений большого мира.",
+      "price": 439,
+      "new_price": 389,
+      "image": "https://cdn1.ozone.ru/multimedia/wc1200/1037906935.jpg",
+      "available": 20,
+      "rating": 4,
+      "discount": true
+    },
+    {
+      "id": 20468991,
+      "title": "До встречи с тобой | Мойес Джоджо",
+      "description": "Лу Кларк знает, сколько шагов от автобусной остановки до ее дома.",
+      "price": 366,
+      "new_price": 366,
+      "image": "https://cdn1.ozone.ru/s3/multimedia-1/wc1200/6014790889.jpg",
+      "available": 12,
+      "rating": 4,
+      "discount": false
+    },
+    {
+      "id": 24054615,
+      "title": "Бегущий за ветром | Хоссейни Халед",
+      "description": "Ошеломляющий дебютный роман, который уже называют главным романом нового века, а его автора - живым классиком.",
+      "price": 432,
+      "new_price": 399,
+      "image": "https://cdn1.ozone.ru/multimedia/wc1200/1007586335.jpg",
+      "available": 20,
+      "rating": 4,
+      "discount": true
+    },
+    {
+      "id": 24860852,
+      "title": "Лолита | Набоков Владимир",
+      "description": "«Лолита» — третий американский роман Владимира Набокова — увидела свет в 1955 году.",
+      "price": 346,
+      "new_price": 299,
+      "image": "https://cdn1.ozone.ru/s3/multimedia-3/wc1200/6008463387.jpg",
+      "available": 5,
+      "rating": 4,
+      "discount": true
+    },
+    {
+      "id": 143923030,
+      "title": "Гарри Поттер и Проклятое дитя. Части первая и вторая. Финальная версия сценария | Роулинг Джоан Кэтлин",
+      "description": "Пьеса Джека Торна «Гарри Поттер и проклятое дитя» создана на основе оригинальной истории от Дж.К. Роулинг, Джона Тиффани и Джека Торна. Это восьмая книга о Гарри Поттере и первая официальная сценическая постановка. Настоящая версия сценария является финальной и включает дополнительные материалы: генеалогическое древо семьи Гарри Поттера, хронологию важнейших событий в жизни Гарри Поттера и беседу Джона Тиффани и Джека Торна о сценарии.",
+      "price": 459,
+      "new_price": 320,
+      "image": "https://cdn1.ozone.ru/s3/multimedia-i/wc1200/6009161802.jpg",
+      "available": 30,
+      "rating": 3,
+      "discount": false
+    }
+  ]
+}
