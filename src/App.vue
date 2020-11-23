@@ -3,15 +3,15 @@
     <h1 class="is-size-4 title"> Магазин e-commerce</h1>
     <div class="columns is-multiline cards_wrapper">
       <Card
-      v-for="book in books"
-      v-bind:key="book.id"
-      v-bind:image="book.image"
-      v-bind:rating="book.rating"
-      v-bind:title="book.title"
-      v-bind:discount="book.discount"
-      v-bind:price="book.price"
-      v-bind:new_price="book.new_price"
-      v-bind:available="book.available"
+      v-for="videocard in videos"
+      v-bind:key="videocard.id"
+      v-bind:image="videocard.image"
+      v-bind:rating="videocard.rating"
+      v-bind:title="videocard.title"
+      v-bind:discount="videocard.discount"
+      v-bind:price="videocard.price"
+      v-bind:new_price="videocard.new_price"
+      v-bind:available="videocard.available"
       />
     </div>
   </div>
@@ -28,7 +28,7 @@ export default {
   },
   data() {
     return {
-      books: data.books,
+      videos: data.video,
     };
   },
 };
