@@ -3,15 +3,20 @@
     <div class="card">
       <button class="button" v-if="canBuy">Товар закончился</button>
       <img v-bind:src="image" class="card__img">
+      <button class="button is-danger" v-if="discount">
+        {{`${ Math.round(( price - new_price ) / (price / 100)) } %` }}
+      </button>
       <p>{{rating}}/5</p>
       <h3 class="card__title is-size-5"> {{ title | formatTitle }}</h3>
-      <p class="card__price is-size-5 has-text-weight-bold has-text-danger"
+      <p class="card__price is-size-5 has-text-weight-bold"
          v-if='discount'>
-        {{ price | formatPrice }} </p>
+        <span class="has-text-danger">{{ new_price | formatPrice }} </span>
+        <del>{{ price | formatPrice }}</del>
+      </p>
       <p class="card__price is-size-5 has-text-weight-bold"
          v-else>
         {{ price | formatPrice }} </p>
-      <button class="button is-danger is-pulled-right">Заказать</button>
+      <button class="button is-danger is-pulled-right" v-if="available">Заказать</button>
     </div>
   </div>
 </template>
