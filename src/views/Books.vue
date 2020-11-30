@@ -4,16 +4,17 @@
     <div class="columns is-multiline cards_wrapper">
       {{ countOfProducts }}
       <Card
-        v-for="videocard in videos"
-        v-bind:key="videocard.id"
-        v-bind:image="videocard.image"
-        v-bind:rating="videocard.rating"
-        v-bind:title="videocard.title"
-        v-bind:discount="videocard.discount"
-        v-bind:price="videocard.price"
-        v-bind:new_price="videocard.new_price"
-        v-bind:available="videocard.available"
-        @addToCart = "addProduct(videocard)"
+        v-for="book in books"
+        v-bind:key="book.id"
+        v-bind:id="book.id"
+        v-bind:image="book.image"
+        v-bind:rating="book.rating"
+        v-bind:title="book.title"
+        v-bind:discount="book.discount"
+        v-bind:price="book.price"
+        v-bind:new_price="book.new_price"
+        v-bind:available="book.available"
+        @addToCart = "addProduct(book)"
       />
     </div>
   </div>
@@ -30,7 +31,7 @@ export default {
   },
   data() {
     return {
-      videos: data.video,
+      books: data.books,
       cart: [],
     };
   },

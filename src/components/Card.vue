@@ -1,71 +1,142 @@
 <template>
-  <div class="column is-one-quarter">
+  <div class="column is-one-quarter-desktop is-full-mobile">
+
     <div class="card">
-      <button class="button" v-if="canBuy">Товар закончился</button>
-      <img v-bind:src="image" class="card__img">
-      <p>{{rating}}/5</p>
-      <h3 class="card__title is-size-5"> {{ title | formatTitle }}</h3>
-      <p class="card__price is-size-5 has-text-weight-bold has-text-danger"
-         v-if='discount'>
+      <div class="card__img" v-bind:style="{backgroundImage: `url(${image})`}">
+        <button class="button is-danger btn_discount" v-show="discount">
+          {{
+            discount ? `${Math.round((price - new_price) /
+              (price / 100))}%` : ''
+          }}
+        </button>
+      </div>
+      <StarRating
+        increment="0.1"
+        read-only="true"
+        star-size="20"
+        active-color="#ff8970"
+        :show-rating="false"
+        :rating="rating"
+      />
+      <router-link :to="'/product/' + id">
+        <h3 class="card__title is-size-5"> {{ title | formatTitle }} </h3>
+      </router-link>
+      <p class="card__description is-size-5" v-text="description"></p>
+      <p class="card__price is-size-5"
+         v-if="discount">
+        <span class="has-text-danger has-text-weight-bold">{{ new_price | formatPrice }} </span>
+        <del class="has-text-grey">{{ price | formatPrice }}</del>
+      </p>
+      <p class="card__price is-size-5 has-text-weight-bold" v-else>
         {{ price | formatPrice }} </p>
-      <p class="card__price is-size-5 has-text-weight-bold"
-         v-else>
-        {{ price | formatPrice }} </p>
-      <button class="button is-danger is-pulled-right">Заказать</button>
+      <p class="card__available is-size-6"> В наличии {{ available }} </p>
+      <button v-bind:class="addInfoColor"
+              v-on:click.once="addProductToCart" v-if="available"> {{addInfo}}
+      </button>
+      <button class="button" v-show="canBuy">Нет в наличии</button>
     </div>
+
   </div>
+
 </template>
 
 <script>
+import StarRating from 'vue-star-rating';
+
 export default {
-  name: 'Card.vue',
+  name: 'Card',
+  components: {
+    StarRating,
+  },
+  data() {
+    return {
+      addInfo: 'Добавить в корзину',
+      addInfoColor: 'button is-link is-pulled-right',
+    };
+  },
   props: {
+    id: Number,
     image: String,
     rating: Number,
     title: String,
+    description: String,
     discount: Boolean,
     price: Number,
     new_price: Number,
     available: Number,
   },
-  computed: {
-    canBuy() {
-      return this.available === 0;
-    },
-  },
   filters: {
-    formatTitle(title) {
-      if (title.length > 28) {
-        return `${title.slice(0, 28)}...`;
-      }
-      return title;
-    },
     formatPrice(price) {
+      if (!parseInt(price, 10)) {
+        return '';
+      }
       if (price > 999) {
-        const priceArray = String(price).split('').reverse();
+        const priceArray = String(price)
+          .split('')
+          .reverse();
         for (let i = 0; i < priceArray.length; i += 1) {
           if (i % 4 === 0) {
             priceArray.splice(i, 0, ' ');
           }
         }
-        return `${priceArray.reverse().join('')} ₽`;
+        return `${priceArray.reverse()
+          .join('')} ₽`;
       }
       return `${price} ₽`;
     },
+    formatTitle(title) {
+      if (title.length > 28) {
+        return `${title.slice(0, 28)}...`;
+      }
+      return `${title}`;
+    },
   },
+  methods: {
+    addProductToCart() {
+      this.addInfo = 'В корзине';
+      this.addInfoColor = 'is-danger button is-link is-pulled-right';
+      this.$emit('addToCart');
+    },
+  },
+  computed: {
+    canBuy() {
+      if (this.available === 0) {
+        return true;
+      }
+      return false;
+    },
+
+  },
+
 };
 </script>
 
 <style>
-.card{
-  padding: 1em;
-  margin-bottom: 5em;
+.card {
+  margin: 2em;
+  padding: 10px 10px 30px 10px;
 }
-.card__title{
-  font-weight: bold;
-  margin: 1em 0;
+
+.card__img {
+  height: 350px;
+  width: auto;
+  padding: 7px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
-.card__img{
-  height: 200px;
+
+.btn_discount {
+  width: 45px;
+  height: 45px;
+}
+
+.card__title:hover {
+  color: blue;
+  cursor: pointer;
 }
 </style>

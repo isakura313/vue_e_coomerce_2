@@ -12,46 +12,23 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
         <router-link class="navbar-item" to="/">
-          Home
+          Домой
         </router-link>
 
         <router-link class="navbar-item" to="/books">
-          Books
+          Книги
         </router-link>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            More
-          </a>
-
-          <div class="navbar-dropdown">
-            <a class="navbar-item">
-              About
-            </a>
-            <a class="navbar-item">
-              Jobs
-            </a>
-            <a class="navbar-item">
-              Contact
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item">
-              Report an issue
-            </a>
-          </div>
-        </div>
+        <router-link class="navbar-item" to="/videocards">
+          Видеокарты
+        </router-link>
       </div>
 
       <div class="navbar-end">
         <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary">
-              <strong>Sign up</strong>
-            </a>
-            <a class="button is-light">
-              Log in
-            </a>
-          </div>
+          <router-link class="navbar-item" to="/cart">
+            <img src="../assets/cart.svg" alt="" height="100px" width="50px">
+            <span class="counter">{{ counter }}</span>
+          </router-link>
         </div>
       </div>
     </div>
@@ -61,6 +38,9 @@
 <script>
 export default {
   name: 'Header',
+  props: {
+    counter: Number,
+  },
 };
 </script>
 

@@ -6,6 +6,7 @@
       <Card
         v-for="videocard in videos"
         v-bind:key="videocard.id"
+        v-bind:id="videocard.id"
         v-bind:image="videocard.image"
         v-bind:rating="videocard.rating"
         v-bind:title="videocard.title"
