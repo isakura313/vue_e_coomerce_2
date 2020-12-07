@@ -37,13 +37,10 @@ export default {
   },
   methods: {
     addProduct(item) {
-      this.cart.push(item);
+      this.$store.commit('SET_CART', item);
     },
   },
   computed: {
-    countOfProducts() {
-      return this.cart.length || 0;
-    },
   },
 };
 </script>

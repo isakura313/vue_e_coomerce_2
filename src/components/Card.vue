@@ -1,19 +1,18 @@
 <template>
   <div class="column is-one-quarter-desktop is-full-mobile">
-
     <div class="card">
       <div class="card__img" v-bind:style="{backgroundImage: `url(${image})`}">
         <button class="button is-danger btn_discount" v-show="discount">
           {{
-            discount ? `${Math.round((price - new_price) /
-              (price / 100))}%` : ''
+            `${Math.round((price - new_price) /
+              (price / 100))}%`
           }}
         </button>
       </div>
       <StarRating
-        increment="0.1"
-        read-only="true"
-        star-size="20"
+        :increment = 0.1
+        :read-only=true
+        :star-size = 20
         active-color="#ff8970"
         :show-rating="false"
         :rating="rating"
@@ -31,7 +30,7 @@
         {{ price | formatPrice }} </p>
       <p class="card__available is-size-6"> В наличии {{ available }} </p>
       <button v-bind:class="addInfoColor"
-              v-on:click.once="addProductToCart" v-if="available"> {{addInfo}}
+              v-on:click="addProductToCart" v-if="available"> {{addInfo}}
       </button>
       <button class="button" v-show="canBuy">Нет в наличии</button>
     </div>
@@ -56,11 +55,18 @@ export default {
   },
   props: {
     id: Number,
-    image: String,
+    image: {
+      type: String,
+      default: 'https://safetyaustraliagroup.com.au/wp-content/uploads/2019/05/image-not-found.png',
+    },
     rating: Number,
     title: String,
     description: String,
-    discount: Boolean,
+    discount: {
+      type: Boolean,
+      required: true,
+      default: false,
+    },
     price: Number,
     new_price: Number,
     available: Number,

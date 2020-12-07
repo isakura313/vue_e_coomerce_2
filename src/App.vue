@@ -1,12 +1,13 @@
 <template>
   <div id="app">
-  <Header counter=0 />
+  <Header :counter=cart.length />
     <router-view></router-view>
    <Footer />
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import Header from './layouts/Header.vue';
 import Footer from './layouts/Footer.vue';
 
@@ -16,20 +17,12 @@ export default {
     Header,
     Footer,
   },
-  data() {
-    return {
-      cart: [],
-    };
-  },
   methods: {
-    addProduct(item) {
-      this.cart.push(item);
-    },
   },
   computed: {
-    countOfProducts() {
-      return this.cart.length || 0;
-    },
+    ...mapGetters([
+      'cart',
+    ]),
   },
 };
 </script>
