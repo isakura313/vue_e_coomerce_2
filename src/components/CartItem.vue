@@ -5,16 +5,22 @@
       <router-link :to="'/product/' + id">
         <h3 class="cart_item__title is-size-5"> {{ title }} </h3>
       </router-link>
-      <p class="cart_item__price is-size-5"
+      <div class="cart_item__price is-size-5"
          v-if="discount">
-        <span class="has-text-danger has-text-weight-bold">{{ new_price | formatPrice }} </span>
+        <p class="has-text-danger has-text-weight-bold">
+          {{ new_price | formatPrice }}
+        </p>
+      <p>
         <del class="has-text-grey">{{ price | formatPrice }}</del>
       </p>
+      </div>
       <p class="cart_item__price is-size-5 has-text-weight-bold" v-else>
         {{ price | formatPrice }} </p>
       <p class="cart_item_available is-size-6"> В наличии {{ available }} </p>
       <button class="is-danger button"
-              v-on:click="deleteItemFromCart" v-if="available"> {{addInfo}}
+              v-on:click="deleteItemFromCart(id)"
+              v-if="available">
+        Удалить
       </button>
       <button class="button" v-show="canBuy">Нет в наличии</button>
     </div>
@@ -68,8 +74,8 @@ export default {
     },
   },
   methods: {
-    deleteItemFromCart() {
-
+    deleteItemFromCart(id) {
+      this.$store.commit('DELETE_ITEM', id);
     },
   },
   computed: {
@@ -89,15 +95,15 @@ export default {
 .cart_item {
   margin: 2em;
   padding: 10px 10px 30px 10px;
-  display:flex;
-  justify-content: space-between;
+  display:grid;
+  grid-template-columns: 30% 30% 20% 10% 10%;
   align-items: center;
   border-bottom: 2px solid black;
 }
 
 .cart_item__img {
   height: 150px;
-  width: auto;
+  width: 400px;
   padding: 7px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -107,5 +113,10 @@ export default {
 .cart_item__title:hover {
   color: blue;
   cursor: pointer;
+}
+.cart_item__price{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 </style>

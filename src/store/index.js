@@ -1,18 +1,19 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import createPersistedState from 'vuex-persistedstate';
+import moduleCart from './modules/cart';
+import moduleProducts from './modules/product';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-    cart: [],
+  modules: {
+    moduleCart,
+    moduleProducts,
   },
-  getters: {
-    cart: (state) => state.cart,
-  },
-  mutations: {
-    SET_CART(state, item) {
-      state.cart.push(item);
-    },
-  },
+  plugins: [
+    createPersistedState({
+      paths: ['moduleCart.cart'],
+    }),
+  ],
 });

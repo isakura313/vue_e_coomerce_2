@@ -1,6 +1,6 @@
 <template>
   <div class="cart columns">
-    <div class="column is-6 if-full-mobile">
+    <div class="column is-10 if-full-mobile">
       <CartItem
         v-for="item in cart"
         v-bind:key="item.id"
