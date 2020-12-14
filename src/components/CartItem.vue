@@ -36,7 +36,6 @@ export default {
       type: String,
       default: 'https://safetyaustraliagroup.com.au/wp-content/uploads/2019/05/image-not-found.png',
     },
-    rating: Number,
     title: String,
     description: String,
     discount: {
@@ -87,30 +86,25 @@ export default {
 </script>
 
 <style>
-.card {
+.cart_item {
   margin: 2em;
   padding: 10px 10px 30px 10px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
 }
 
-.card__img {
-  height: 350px;
+.cart_item__img {
+  height: 150px;
   width: auto;
   padding: 7px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
 }
 
-.btn_discount {
-  width: 45px;
-  height: 45px;
-}
-
-.card__title:hover {
+.cart_item__title:hover {
   color: blue;
   cursor: pointer;
 }
