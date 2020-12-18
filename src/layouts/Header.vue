@@ -15,11 +15,14 @@
           Домой
         </router-link>
 
-        <router-link class="navbar-item" to="/books">
+        <router-link class="navbar-item" to="/section/books">
           Книги
         </router-link>
-        <router-link class="navbar-item" to="/videocards">
+        <router-link class="navbar-item" to="/section/videocards">
           Видеокарты
+        </router-link>
+        <router-link class="navbar-item" to="/section/comics">
+          Комиксы
         </router-link>
       </div>
 

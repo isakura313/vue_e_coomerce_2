@@ -1,8 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '@/views/Home.vue';
-import Books from '@/views/Books.vue';
-import Video from '@/views/Video.vue';
+import Section from '@/views/Section.vue';
 import Cart from '@/views/Cart.vue';
 import Product from '@/views/Product.vue';
 
@@ -15,19 +14,14 @@ const routes = [
     component: Home,
   },
   {
-    path: '/books',
-    name: 'Books',
-    component: Books,
-  },
-  {
-    path: '/videocards',
-    name: 'Video',
-    component: Video,
-  },
-  {
     path: '/cart',
     name: 'Cart',
     component: Cart,
+  },
+  {
+    path: '/section/:product_name',
+    name: 'Section',
+    component: Section,
   },
   {
     path: '/product/:id',

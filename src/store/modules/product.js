@@ -13,10 +13,12 @@ const moduleProducts = {
     },
   },
   actions: {
-    initProducts: ({ commit }) => {
-      axios.get('/json/full.json')
+    initProducts: ({ commit }, payload) => {
+      axios.get(
+        `http://localhost:3000/${payload.product}/?_sort=price&_order=${payload.sort}`,
+      )
         .then((response) => {
-          commit('SET_PRODUCT', response.data.books);
+          commit('SET_PRODUCT', response.data);
         });
     },
   },

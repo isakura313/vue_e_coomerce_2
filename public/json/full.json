@@ -1,12 +1,12 @@
 {
-  "video": [
+  "videocards": [
     {
       "id": 205213585,
       "title": "Видеокарта Palit RTX 3070 GAMINGPRO",
       "description": "Видеокарта Palit PCI-E 4.0 PA-RTX3070 GAMINGPRO 8G NV RTX3070 8192Mb 256 GDDR6 1500/14000/HDMIx1/DPx",
       "price": 59250,
       "new_price": 59250,
-      "image": "https://cdn1.ozone.ru/s3/multimedia-y/wc1200/6028177630.jpg",
+      "img": "https://cdn1.ozone.ru/s3/multimedia-y/wc1200/6028177630.jpg",
       "available": 20,
       "rating": 5,
       "discount": false
@@ -17,7 +17,7 @@
       "description": "Видеокарта Gigabyte PCI-E 4.0 GV-N3070GAMING OC-8GD NV RTX3070 8192Mb 256 GDDR6 1815/14000/HDMIx2/DP",
       "price": 58035,
       "new_price": 54299,
-      "image": "https://cdn1.ozone.ru/s3/multimedia-m/wc1200/6028177618.jpg",
+      "img": "https://cdn1.ozone.ru/s3/multimedia-m/wc1200/6028177618.jpg",
       "available": 20,
       "rating": 5,
       "discount": true
@@ -28,7 +28,7 @@
       "description": "",
       "price": "",
       "new_price": "",
-      "image": "https://cdn1.ozone.ru/s3/multimedia-o/wc1200/6025178460.jpg",
+      "img": "https://cdn1.ozone.ru/s3/multimedia-o/wc1200/6025178460.jpg",
       "available": 0,
       "rating": 5,
       "discount": false
@@ -39,7 +39,7 @@
       "description": "Radeon RX 5500 XT на основе архитектуры Radeon RDNA обеспечивает исключительную производительность и высокую точность изображения в играх.",
       "price": 18468,
       "new_price": 14600,
-      "image": "https://cdn1.ozone.ru/s3/multimedia-j/wc1200/6008404039.jpg",
+      "img": "https://cdn1.ozone.ru/s3/multimedia-j/wc1200/6008404039.jpg",
       "available": 40,
       "rating": 5,
       "discount": true
@@ -50,7 +50,7 @@
       "description": "коробка, инструкция, диск ПО, видеокарта",
       "price": 10799,
       "new_price": 9999,
-      "image": "https://cdn1.ozone.ru/s3/multimedia-f/wc1200/6029800527.jpg",
+      "img": "https://cdn1.ozone.ru/s3/multimedia-f/wc1200/6029800527.jpg",
       "available": 5,
       "rating": 4,
       "discount": true
@@ -63,7 +63,7 @@
       "description": "На Пятой авеню в Нью-Йорке стоит небольшое здание, ничем не отличающееся от других",
       "price": 317,
       "new_price": 289,
-      "image": "https://cdn1.ozone.ru/s3/multimedia-4/wc1200/6008736520.jpg",
+      "img": "https://cdn1.ozone.ru/s3/multimedia-4/wc1200/6008736520.jpg",
       "available": 10,
       "rating": 4.7,
       "discount": true
@@ -74,7 +74,7 @@
       "description": "Начало ХХ века. Остров Кастелламаре затерялся в Средиземном море, это забытый богом уголок, где так легко найти прибежище от волнений большого мира.",
       "price": 439,
       "new_price": 389,
-      "image": "https://cdn1.ozone.ru/multimedia/wc1200/1037906935.jpg",
+      "img": "https://cdn1.ozone.ru/multimedia/wc1200/1037906935.jpg",
       "available": 20,
       "rating": 4,
       "discount": true
@@ -85,7 +85,7 @@
       "description": "Лу Кларк знает, сколько шагов от автобусной остановки до ее дома.",
       "price": 366,
       "new_price": 366,
-      "image": "https://cdn1.ozone.ru/s3/multimedia-1/wc1200/6014790889.jpg",
+      "img": "https://cdn1.ozone.ru/s3/multimedia-1/wc1200/6014790889.jpg",
       "available": 12,
       "rating": 4,
       "discount": false
@@ -96,7 +96,7 @@
       "description": "Ошеломляющий дебютный роман, который уже называют главным романом нового века, а его автора - живым классиком.",
       "price": 432,
       "new_price": 399,
-      "image": "https://cdn1.ozone.ru/multimedia/wc1200/1007586335.jpg",
+      "img": "https://cdn1.ozone.ru/multimedia/wc1200/1007586335.jpg",
       "available": 20,
       "rating": 4,
       "discount": true
@@ -107,7 +107,7 @@
       "description": "«Лолита» — третий американский роман Владимира Набокова — увидела свет в 1955 году.",
       "price": 346,
       "new_price": 299,
-      "image": "https://cdn1.ozone.ru/s3/multimedia-3/wc1200/6008463387.jpg",
+      "img": "https://cdn1.ozone.ru/s3/multimedia-3/wc1200/6008463387.jpg",
       "available": 5,
       "rating": 4,
       "discount": true
@@ -118,10 +118,271 @@
       "description": "Пьеса Джека Торна «Гарри Поттер и проклятое дитя» создана на основе оригинальной истории от Дж.К. Роулинг, Джона Тиффани и Джека Торна. Это восьмая книга о Гарри Поттере и первая официальная сценическая постановка. Настоящая версия сценария является финальной и включает дополнительные материалы: генеалогическое древо семьи Гарри Поттера, хронологию важнейших событий в жизни Гарри Поттера и беседу Джона Тиффани и Джека Торна о сценарии.",
       "price": 459,
       "new_price": 320,
-      "image": "https://cdn1.ozone.ru/s3/multimedia-i/wc1200/6009161802.jpg",
+      "img": "https://cdn1.ozone.ru/s3/multimedia-i/wc1200/6009161802.jpg",
       "available": 30,
       "rating": 3,
       "discount": false
+    }
+  ],
+  "comics": [
+    {
+      "id": 0,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-h/c250/6008291177.jpg",
+      "price": 580,
+      "discount": false,
+      "title": "Гравити Фолз. Забытые легенды. Графический роман. | Хирш Алекс",
+      "rating": "4.9375"
+    },
+    {
+      "id": 1,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-g/c250/6020008852.jpg",
+      "price": 357,
+      "discount": false,
+      "title": "Гравити Фолз. Графический роман. Вып. 1 / Gravity Falls Cinestory Vol1 | Хирш Алекс",
+      "rating": "4.763490200042725"
+    },
+    {
+      "id": 2,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-a/c250/6008622730.jpg",
+      "price": 583,
+      "discount": true,
+      "old_price": 669,
+      "title": "Бэтмен. Убийственная шутка | Мур Алан",
+      "rating": "4.870450019836426"
+    },
+    {
+      "id": 3,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-k/c250/6008517872.jpg",
+      "price": 500,
+      "discount": false,
+      "title": "The Boys: Пацаны. Том 1. Самое главное | Эннис Гарт, Робертсон Дэрик",
+      "rating": "4.938779830932617"
+    },
+    {
+      "id": 4,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-o/c250/6008223468.jpg",
+      "price": 1372,
+      "discount": false,
+      "title": "Инкал | Ходоровски Алехандро",
+      "rating": "5"
+    },
+    {
+      "id": 5,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-q/c250/6009859454.jpg",
+      "price": 847,
+      "discount": true,
+      "old_price": 1011,
+      "title": "The Sandman. Песочный человек. Кн.8. У Конца Миров | Гейман Нил",
+      "rating": "4.920000076293945"
+    },
+    {
+      "id": 6,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-e/c250/6010504310.jpg",
+      "price": 849,
+      "discount": true,
+      "old_price": 962,
+      "title": "Джон Константин. Hellblazer. Опасные привычки | Эннис Гарт",
+      "rating": "4.862070083618164"
+    },
+    {
+      "id": 7,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-w/c250/6018521348.jpg",
+      "price": 448,
+      "discount": true,
+      "old_price": 508,
+      "title": "Призрак для Ани. Графический роман | Бросгол Вера",
+      "rating": "4.75"
+    }
+  ],
+  "all_products": [
+    {
+      "id": 0,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-h/c250/6008291177.jpg",
+      "price": 580,
+      "discount": false,
+      "title": "Гравити Фолз. Забытые легенды. Графический роман. | Хирш Алекс",
+      "rating": "4.9375"
+    },
+    {
+      "id": 1,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-g/c250/6020008852.jpg",
+      "price": 357,
+      "discount": false,
+      "title": "Гравити Фолз. Графический роман. Вып. 1 / Gravity Falls Cinestory Vol1 | Хирш Алекс",
+      "rating": "4.763490200042725"
+    },
+    {
+      "id": 2,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-a/c250/6008622730.jpg",
+      "price": 583,
+      "discount": true,
+      "old_price": 669,
+      "title": "Бэтмен. Убийственная шутка | Мур Алан",
+      "rating": "4.870450019836426"
+    },
+    {
+      "id": 3,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-k/c250/6008517872.jpg",
+      "price": 500,
+      "discount": false,
+      "title": "The Boys: Пацаны. Том 1. Самое главное | Эннис Гарт, Робертсон Дэрик",
+      "rating": "4.938779830932617"
+    },
+    {
+      "id": 4,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-o/c250/6008223468.jpg",
+      "price": 1372,
+      "discount": false,
+      "title": "Инкал | Ходоровски Алехандро",
+      "rating": "5"
+    },
+    {
+      "id": 5,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-q/c250/6009859454.jpg",
+      "price": 847,
+      "discount": true,
+      "old_price": 1011,
+      "title": "The Sandman. Песочный человек. Кн.8. У Конца Миров | Гейман Нил",
+      "rating": "4.920000076293945"
+    },
+    {
+      "id": 6,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-e/c250/6010504310.jpg",
+      "price": 849,
+      "discount": true,
+      "old_price": 962,
+      "title": "Джон Константин. Hellblazer. Опасные привычки | Эннис Гарт",
+      "rating": "4.862070083618164"
+    },
+    {
+      "id": 7,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-w/c250/6018521348.jpg",
+      "price": 448,
+      "discount": true,
+      "old_price": 508,
+      "title": "Призрак для Ани. Графический роман | Бросгол Вера",
+      "rating": "4.75"
+    },
+    {
+      "id": 146804262,
+      "title": "Не такая, как все | Леви Марк",
+      "description": "На Пятой авеню в Нью-Йорке стоит небольшое здание, ничем не отличающееся от других",
+      "price": 317,
+      "new_price": 289,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-4/wc1200/6008736520.jpg",
+      "available": 10,
+      "rating": 4.7,
+      "discount": true
+    },
+    {
+      "id": 141011657,
+      "title": "Дом на краю ночи | Бэннер Кэтрин",
+      "description": "Начало ХХ века. Остров Кастелламаре затерялся в Средиземном море, это забытый богом уголок, где так легко найти прибежище от волнений большого мира.",
+      "price": 439,
+      "new_price": 389,
+      "img": "https://cdn1.ozone.ru/multimedia/wc1200/1037906935.jpg",
+      "available": 20,
+      "rating": 4,
+      "discount": true
+    },
+    {
+      "id": 20468991,
+      "title": "До встречи с тобой | Мойес Джоджо",
+      "description": "Лу Кларк знает, сколько шагов от автобусной остановки до ее дома.",
+      "price": 366,
+      "new_price": 366,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-1/wc1200/6014790889.jpg",
+      "available": 12,
+      "rating": 4,
+      "discount": false
+    },
+    {
+      "id": 24054615,
+      "title": "Бегущий за ветром | Хоссейни Халед",
+      "description": "Ошеломляющий дебютный роман, который уже называют главным романом нового века, а его автора - живым классиком.",
+      "price": 432,
+      "new_price": 399,
+      "img": "https://cdn1.ozone.ru/multimedia/wc1200/1007586335.jpg",
+      "available": 20,
+      "rating": 4,
+      "discount": true
+    },
+    {
+      "id": 24860852,
+      "title": "Лолита | Набоков Владимир",
+      "description": "«Лолита» — третий американский роман Владимира Набокова — увидела свет в 1955 году.",
+      "price": 346,
+      "new_price": 299,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-3/wc1200/6008463387.jpg",
+      "available": 5,
+      "rating": 4,
+      "discount": true
+    },
+    {
+      "id": 143923030,
+      "title": "Гарри Поттер и Проклятое дитя. Части первая и вторая. Финальная версия сценария | Роулинг Джоан Кэтлин",
+      "description": "Пьеса Джека Торна «Гарри Поттер и проклятое дитя» создана на основе оригинальной истории от Дж.К. Роулинг, Джона Тиффани и Джека Торна. Это восьмая книга о Гарри Поттере и первая официальная сценическая постановка. Настоящая версия сценария является финальной и включает дополнительные материалы: генеалогическое древо семьи Гарри Поттера, хронологию важнейших событий в жизни Гарри Поттера и беседу Джона Тиффани и Джека Торна о сценарии.",
+      "price": 459,
+      "new_price": 320,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-i/wc1200/6009161802.jpg",
+      "available": 30,
+      "rating": 3,
+      "discount": false
+    },
+    {
+      "id": 205213585,
+      "title": "Видеокарта Palit RTX 3070 GAMINGPRO",
+      "description": "Видеокарта Palit PCI-E 4.0 PA-RTX3070 GAMINGPRO 8G NV RTX3070 8192Mb 256 GDDR6 1500/14000/HDMIx1/DPx",
+      "price": 59250,
+      "new_price": 59250,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-y/wc1200/6028177630.jpg",
+      "available": 20,
+      "rating": 5,
+      "discount": false
+    },
+    {
+      "id": 205213586,
+      "title": "Видеокарта Gigabyte RTX 3070 GAMING OC (GV-N3070GAMING OC-8GD)",
+      "description": "Видеокарта Gigabyte PCI-E 4.0 GV-N3070GAMING OC-8GD NV RTX3070 8192Mb 256 GDDR6 1815/14000/HDMIx2/DP",
+      "price": 58035,
+      "new_price": 54299,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-m/wc1200/6028177618.jpg",
+      "available": 20,
+      "rating": 5,
+      "discount": true
+    },
+    {
+      "id": 200750095,
+      "title": "Видеокарта nVidia GeForce GTX1660 Super Palit GamingPro OC PCI-E 6144Mb (NE6166SS18J9-1160A)",
+      "description": "",
+      "price": "",
+      "new_price": "",
+      "img": "https://cdn1.ozone.ru/s3/multimedia-o/wc1200/6025178460.jpg",
+      "available": 0,
+      "rating": 5,
+      "discount": false
+    },
+    {
+      "id": 177012662,
+      "title": "Видеокарта MSI Radeon RX 5500 XT MECH OC 8GB",
+      "description": "Radeon RX 5500 XT на основе архитектуры Radeon RDNA обеспечивает исключительную производительность и высокую точность изображения в играх.",
+      "price": 18468,
+      "new_price": 14600,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-j/wc1200/6008404039.jpg",
+      "available": 40,
+      "rating": 5,
+      "discount": true
+    },
+    {
+      "id": 196109079,
+      "title": "Видеокарта AFOX GeForce GTX 1050 Ti 4096Mb V3 (AF1050TI-4096D5H2-V3)",
+      "description": "коробка, инструкция, диск ПО, видеокарта",
+      "price": 10799,
+      "new_price": 9999,
+      "img": "https://cdn1.ozone.ru/s3/multimedia-f/wc1200/6029800527.jpg",
+      "available": 5,
+      "rating": 4,
+      "discount": true
     }
   ]
 }

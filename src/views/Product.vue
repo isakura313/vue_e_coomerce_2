@@ -2,11 +2,11 @@
   <div class="column is-full-desktop is-full-mobile">
 
     <div class="card">
-      <div class="card__img" v-bind:style="{backgroundImage: `url(${info[0].image})`}">
-        <button class="button is-danger btn_discount" v-show="info[0].discount">
+      <div class="card__img" v-bind:style="{backgroundImage: `url(${info.img})`}">
+        <button class="button is-danger btn_discount" v-show="info.discount">
           {{
-           `${Math.round((info[0].price - info[0].new_price) /
-              (info[0].price / 100))}%`
+           `${Math.round((info.price - info.new_price) /
+              (info.price / 100))}%`
           }}
         </button>
       </div>
@@ -16,21 +16,21 @@
         star-size="20"
         active-color="#ff8970"
         :show-rating="false"
-        :rating="info[0].rating"
+        :rating="info.rating"
       />
-      <h3 class="card__title is-size-5"> {{ info[0].title }} </h3>
-      <p class="card__description is-size-5">{{info[0].description}}</p>
+      <h3 class="card__title is-size-5"> {{ info.title }} </h3>
+      <p class="card__description is-size-5">{{info.description}}</p>
       <p class="card__price is-size-5"
-         v-if="info[0].discount">
-        <span class="has-text-danger has-text-weight-bold">{{ info[0].new_price | formatPrice }}
+         v-if="info.discount">
+        <span class="has-text-danger has-text-weight-bold">{{ info.new_price | formatPrice }}
         </span>
-        <del class="has-text-grey">{{ info[0].price | formatPrice }}</del>
+        <del class="has-text-grey">{{ info.price | formatPrice }}</del>
       </p>
       <p class="card__price is-size-5 has-text-weight-bold" v-else>
-        {{ info[0].price | formatPrice }} </p>
-      <p class="card__available is-size-6"> В наличии {{ info[0].available }} </p>
+        {{ info.price | formatPrice }} </p>
+      <p class="card__available is-size-6"> В наличии {{ info.available }} </p>
       <button v-bind:class="addInfoColor"
-              v-on:click.once="addProductToCart" v-if="info[0].available"> {{addInfo}}
+              v-on:click.once="addProductToCart" v-if="info.available"> {{addInfo}}
       </button>
       <button class="button" v-show="canBuy">Нет в наличии</button>
     </div>
@@ -89,10 +89,10 @@ export default {
     },
   },
   async created() {
-    const response = await fetch('/json/full.json');
+    const response = await fetch(`http://localhost:3000/all_products/${this.$route.params.id}`);
     this.info = await response.json();
-    this.info = [...this.info.video, ...this.info.books].filter((data) => data.id
-    === Number(this.$route.params.id));
+    // this.info = [...this.info.video, ...this.info.books].filter((data) => data.id
+    // === Number(this.$route.params.id));
   },
 };
 </script>
